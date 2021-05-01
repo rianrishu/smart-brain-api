@@ -26,7 +26,7 @@ const db = knex(
 
 db.select('*').from('users');
 
-app.get('/',res.json("working"));
+app.get('/',(req,res) => {res.send("working")});
 
 // signin
 app.post('/signin', (req, res) => {signin.handleSignin(req,res,db)})
