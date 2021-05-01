@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const knex = require('knex');
-const bcrypt = require('bcrypt-nodejs');
+// const bcrypt = require('bcrypt-nodejs');
 const { res } = require('express');
 app.use(express.json());
 app.use(cors());
